@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trang bài tập – [Họ Tên]</title>
+  <style>
+    :root{
+      --bg:#0f172a;      /* xanh đen */
+      --card:#111827;
+      --muted:#cbd5e1;
+      --accent:#38bdf8;
+      --border:#1f2937;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:system-ui, Arial, sans-serif;
+      background:linear-gradient(180deg,#0b1022, #0f172a);
+      color:#e5e7eb;
+    }
+    .wrap{max-width:980px; margin:32px auto; padding:0 16px;}
+    header{
+      display:flex; align-items:center; gap:18px;
+      background:rgba(17,24,39,.65); border:1px solid var(--border);
+      padding:18px; border-radius:14px; backdrop-filter: blur(6px);
+    }
+    img.avatar{
+      width:92px; height:92px; border-radius:14px; object-fit:cover;
+      border:2px solid var(--accent);
+    }
+    h1{margin:0 0 4px; font-size:28px}
+    .muted{color:var(--muted)}
+    .badge{display:inline-block; padding:4px 10px; border-radius:999px; background:#0b2533; color:#9ae6ff; border:1px solid #123b4f; font-size:12px}
+
+    .grid{
+      margin-top:22px;
+      display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:14px;
+    }
+    .card{
+      background:rgba(17,24,39,.75); border:1px solid var(--border);
+      padding:14px; border-radius:12px;
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .card:hover{ transform: translateY(-2px); border-color:#334155 }
+    .card h3{margin:0 0 8px; font-size:16px}
+    a.btn{
+      display:inline-block; padding:8px 10px; border-radius:10px;
+      background:#0b2533; border:1px solid #153a4e; color:#c8f1ff; text-decoration:none;
+    }
+    a.btn:hover{ background:#0e2f42 }
+    .social{display:flex; gap:10px; margin-top:10px; flex-wrap:wrap}
+    .social a{
+      padding:8px 10px; border-radius:10px; background:#111827; border:1px solid #1f2937; color:#cbd5e1; text-decoration:none
+    }
+    .social a:hover{border-color:#334155}
+    footer{margin-top:26px; text-align:center; color:#93a3b8}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- THÔNG TIN CÁ NHÂN -->
+    <header>
+      <!-- Đổi src ảnh của bạn -->
+      <img class="avatar">
+      <div>
+        <h1>[Trần Thanh Tâm]</h1>
+        <div class="muted">Lớp/Ngành: … • UEH</div>
+        <div class="badge">HTML • CSS • Web căn bản</div>
+        <div class="social">
+          <a href="https://facebook.com/3den.tam" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.linkedin.com/in/thanhtamtr/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/thahtum" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:tranthanhtam.hcmc@gmail.com">Email</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- DANH SÁCH BÀI TẬP -->
+    <section class="grid" aria-label="Danh sách bài tập">
+      <!-- Cập nhật href đúng tên file của bạn -->
+      <article class="card">
+        <h3>Bài tập 2a </h3>
+        <a class="btn" href="Tuan3/BaiTap2a.html">Mở bài 2a</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập 2b  </h3>
+        <a class="btn" href="Tuan3/BaiTap2b.html">Mở bài 2b</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập 2c </h3>
+        <a class="btn" href="Tuan3/BaiTap2c.html">Mở bài 2c</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập 2d </h3>
+        <a class="btn" href="Tuan3/BaiTap2d.html">Mở bài 2d</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập 2e </h3>
+        <a class="btn" href="Tuan3/BaiTap2e.html">Mở bài 2e</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập 4 </h3>
+        <a class="btn" href="Tuan3/BaiTap4.html">Mở bài 4</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập 5 </h3>
+        <a class="btn" href="Tuan3/BaiTap5.html">Mở bài 5</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập 6</h3>
+        <a class="btn" href="Tuan3/BaiTap6.html">Mở bài 6</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập 7</h3>
+        <a class="btn" href="Tuan3/BaiTap7.html">Mở bài 7</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập 8</h3>
+        <a class="btn" href="Tuan3/BaiTap8.html">Mở bài 8</a>
+      </article>
+
+      <article class="card">
+        <h3>Bài tập 9</h3>
+        <a class="btn" href="Tuan3/BaiTap9.html">Mở bài 9</a>
+      </article>
+    </section>
+
+    <footer>© [2025] – [Trần Thanh Tâm]. All rights reserved.</footer>
+  </div>
+</body>
+</html>
